@@ -20,6 +20,7 @@ mongoose.connect(process.env.MongodbURL);
 //   console.log(req.path, req.method);
 //   next();
 // });
+app.get("/checkhealth",(req,res)=>res.send("Heloo"))
 app.use("/api/user",users);
 app.use("/api/studentdetailsRoute", studentdetailsRoute);
 // // app.get('/',(req,res)=>{
